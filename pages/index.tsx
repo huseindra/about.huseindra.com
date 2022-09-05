@@ -73,15 +73,17 @@ const Home: NextPage = () => {
         </nav>
       </div>
       <main className='flex flex-col px-8 mt-36'>
-        <div className='flex w-full mx-auto max-w-2xl  justify-between'>
+        <div className='flex w-full mx-auto max-w-2xl items-center justify-between'>
           <div>
             <div className='flex p-1 border bg-gray-200 text-black rounded-3xl text-center justify-center w-24	items-center text-xs'>
               <span >Hi there!</span><span className='say-hi'>👋🏽</span>
             </div>
             <div>
-              <h1 className='text-3xl font-bold'>“A Believer in the Future of Web”</h1>
+              <h1 className='mt-2 text-3xl font-bold'>“A Believer in the Future of Web”</h1>
               <h2 className='text-sm'>problem-solver. developer. writer. </h2>
-              <span>Not playing - Spotify</span>
+              <div className='flex items-center my-4'>
+                <Image src={'/spotify.svg'} width="18" height="18" alt="Spotify"/><span className='mx-2 text-sm'>Not playing - Spotify</span>
+              </div>
             </div>
           </div>
           <div>
@@ -93,10 +95,10 @@ const Home: NextPage = () => {
             <h3>Husein Ik</h3>
             <a className='mx-2 p-1 border bg-gray-200 text-black rounded-3xl text-center justify-center w-24	items-center text-xs'>Readmore</a>
           </div>
-          <div>
-            <a>Twitter</a>
-            <a>github</a>
-            <a>hello.huseindra[at]gmail.com</a>
+          <div className='flex items-center'>
+            <Image src={'/twitter.svg'} width="18" height="18" alt="Twitter" className='mx-2'/>
+            <Image src={'/github.svg'} width="18" height="18" alt="Github" className='mx-2'/>
+            <a className='mx-2'>hello.huseindra[at]gmail.com</a>
           </div>
         </div>
         <footer className='w-full justify-between mx-auto max-w-2xl my-32 text-center'>
