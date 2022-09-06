@@ -5,11 +5,11 @@
 :root {
   /* Your default theme */
   --background: rgb(249 250 251);
-  --foreground: rgb(17 24 39);
+  --foreground: linear-gradient(90deg, rgba(21,5,46,1) 0%, rgba(65,50,92,1) 100%);
 }
 
 [data-theme='dark'] {
-  --background: rgb(17 24 39);
+  --background: linear-gradient(90deg, rgba(21,5,46,1) 0%, rgba(65,50,92,1) 100%);
   --foreground: rgb(249 250 251);
 }
 
