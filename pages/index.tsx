@@ -30,6 +30,8 @@ const Home: NextPage = () => {
 
   const { theme, setTheme } = useTheme();
 
+  useEffect(() => setTheme('light'), []);
+
   return (
     <Fragment>
       <Container>
