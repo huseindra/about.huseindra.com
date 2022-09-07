@@ -39,19 +39,20 @@ const Home: NextPage = () => {
               <span className='text-sm'>Hi, I am Husein!</span><span className='say-hi'>👋🏽</span>
               <h1 className='text-xl sm:text-3xl font-bold'>A Software Engineer - Web</h1>
               <p className='text-sm text-justify md:text-left'>Welcome to my documentation space where I share what I`m learning and deliver products including but not limited to web technology, cloud technology and project management.</p>
-              <div className='flex items-center my-4'>
-                <NowPlaying />
+              <div className='flex my-4'>
+                <a className='p-1 border bg-gray-200 text-black rounded-3xl text-center justify-center w-24	items-center text-xs cursor-pointer'>Readmore</a>
               </div>
+             
             </div>
           </div>
           <div className='hidden sm:block '>
               <Image src={'/hik.jpeg'} width="90" height="90" alt="Husein Ik" className='border border border-gray-200 rounded-full	' priority/>
           </div>
         </div>
-        <div className='flex flex-col md:flex-row w-full justify-between mx-auto max-w-2xl my-16'>
-          <div className='flex'>
-            <a className='p-1 border bg-gray-200 text-black rounded-3xl text-center justify-center w-24	items-center text-xs cursor-pointer'>Readmore</a>
-          </div>
+        <div className='flex flex-col md:flex-row w-full justify-between mx-auto max-w-2xl my-12'>
+          <div className='flex items-center my-4'>
+              <NowPlaying />
+           </div>
           <div className='flex items-center cursor-pointer'>
             <Social theme={theme}/>
           </div>
