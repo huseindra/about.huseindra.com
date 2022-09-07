@@ -1,4 +1,3 @@
-import querystring from 'querystring';
 
 // define spotify env
 const client_id = process.env.SPOTIFY_CLIENT_ID;
