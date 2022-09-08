@@ -1,30 +1,13 @@
 import type { NextPage } from 'next'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Fragment, useEffect, useState } from 'react'
 import { Container } from '../components/Container'
 import NowPlaying from '../components/NowPlaying'
 import { Social } from '../components/Social'
 
-
-const menu = [
-  {
-    id:1,
-    name: 'Home',
-    path:"/"
-  },
-  {
-    id:2,
-    name: 'Learnings',
-    path:"/learnings"
-  },
-  {
-    id:3,
-    name: 'Projects',
-    path:"/projects"
-  },
-]
 
 const Home: NextPage = () => {
 
@@ -33,7 +16,6 @@ const Home: NextPage = () => {
   useEffect(() => setTheme('light'), []);
 
   return (
-    <Fragment>
       <Container>
         <div className='flex flex-col flex-col-reverse md:mt-36	md:flex-row w-full mx-auto max-w-2xl items-center'>
           <div className='mt-12'>
@@ -42,7 +24,9 @@ const Home: NextPage = () => {
               <h1 className='text-xl sm:text-3xl font-bold'>A Software Engineer - Web</h1>
               <p className='text-sm text-justify md:text-left'>Welcome to my documentation space where I share what I`m learning and deliver products including but not limited to web technology, cloud technology and project management.</p>
               <div className='flex my-4'>
-                <a className='p-1 border bg-gray-200 text-black rounded-3xl text-center justify-center w-24	items-center text-xs cursor-pointer'>Readmore</a>
+                <Link href="/about">
+                  <a className='p-1 border bg-gray-200 text-black rounded-3xl text-center justify-center w-24	items-center text-xs cursor-pointer'>Readmore</a>
+                </Link>
               </div>
              
             </div>
@@ -61,9 +45,6 @@ const Home: NextPage = () => {
         </div>
         
       </Container>
-      
-      
-    </Fragment>
   )
 }
 
