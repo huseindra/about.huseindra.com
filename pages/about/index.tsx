@@ -6,7 +6,7 @@ const About = () => {
 
     return(
        <Container>
-        <MainLayout title='☕️ About Me'>
+        <MainLayout title='☕️ About Me' subTitle='A student of Life'>
           I`m an <span className="line-through">average</span> software engineer who love web technologies. I have a mantra which is to learn, unlearn and relearn. 
           <br/><br/>
           Basically,  I love to learn and do practical things which are the fundamentals, it helps me to open my knowledge and connect the dots.
@@ -26,7 +26,7 @@ const About = () => {
           - Other technologies/services: Firebase, Contenfull, Heroku, VPS technology.<br/><br/>
           <h2 className="font-bold text-xl">Entrepreneurship Journey</h2>
             I have several Entrepreneurship journey such as:<br/>
-            1. <Link href="https://monago.io"><a target="_blank">Monago(2022-now)</a></Link> - Headless CMS - <strong>nurturing</strong><br/>
+            1. <Link href="https://monago.io"><a target="_blank">Monago(2022-now)</a></Link> - iPaaS - <strong>nurturing</strong><br/>
             2. <Link href="https://dailysocial.id/post/aplikasi-tukutu"><a target="_blank">Tukutu(2018-2019)</a></Link> - eCommerce - <strong>closed</strong><br/>
             3. <Link href="https://www.instagram.com/kampusfund/"><a target="_blank">Kampusfund(2018)</a></Link> - Crowdfunding - <strong>closed</strong><br/>
             4. <Link href="https://zonaedukasi.huseindra.com"><a>Zona Edukasi(2014-2016)</a></Link> - Media & Event Students - <strong>closed</strong><br/>
