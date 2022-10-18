@@ -109,6 +109,11 @@ export const MobileNavbar = () => {
       id:3,
       name: 'Projects',
       path:"/projects"
+    },
+    {
+      id:4,
+      name: 'Blog',
+      path:"/tech-blog"
     }
 ]
 
@@ -118,14 +123,16 @@ export const MobileNavbar = () => {
               <div className='flex'>
                 <Image src={'/hik.jpeg'} width="40" height="40" alt="Husein Ik" className='rounded-full' priority/>
               </div>
-              <div className='flex text-sm'>
-              {menu.map(item => {
-                return(
-                  <Link key={item.id} href={item.path}>
-                    <a key={item.id} className={classActive === item.path ? "mx-1 px-2 py-2 font-bold dark:text-black dark:hover:text-black rounded-lg cursor-pointer	hover:bg-gray-100 transition-all" : "mx-1 px-2 py-2 transition-all"}>{item.name}</a>
-                  </Link>
-                )
-              })}
+              <div className="overflow-x-auto">
+                <div className='flex text-sm'>
+                {menu.map(item => {
+                  return(
+                    <Link key={item.id} href={item.path}>
+                      <a key={item.id} className={classActive === item.path ? "mx-1 px-2 py-2 font-md dark:text-black dark:hover:text-black rounded-lg cursor-pointer	hover:bg-gray-100 transition-all" : "mx-1 px-2 py-2 transition-all"}>{item.name}</a>
+                    </Link>
+                  )
+                })}
+                </div>
               </div>
               <button type="button" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} >
                 {activated && (

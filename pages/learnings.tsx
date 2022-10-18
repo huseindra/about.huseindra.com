@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Fragment, useEffect, useState } from 'react'
 import { Container } from '../components/Container'
+import { MainLayout } from '../components/MainLayout'
 import NowPlaying from '../components/NowPlaying'
 import { Social } from '../components/Social'
 
@@ -28,25 +29,14 @@ const menu = [
 
 const Learnings: NextPage = () => {
   const router = useRouter();
-  const classActive = router.pathname;
-  const { theme, setTheme } = useTheme();
-  const [activated, setActivated] = useState(false);
-
-  // to access to the theme
-  useEffect(() => setActivated(true), []);
-
   return (
     <Fragment>
       <Container>
-        <div className='flex flex-col w-full mx-auto max-w-2xl'>
-          <div className='mt-12'>
-            <h1 className='text-2xl font-bold'>📚 Learnings</h1>
-          </div>
+          <MainLayout title='📚 Learnings' subTitle='Technical documentation I have learned'>
           <div className=''>
             Coming Soon !
           </div>
-        </div>
-        
+          </MainLayout>        
       </Container>
       
       
