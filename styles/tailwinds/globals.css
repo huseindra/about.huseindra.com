@@ -30,6 +30,13 @@ a {
   box-sizing: border-box;
 }
 
+.blog-list:hover{
+  transition:0.6s ease;
+  background-color:#fafafa;
+  color:#222 !important;
+  cursor:pointer;
+  border:1px solid #ddd;
+}
 
 .say-hi {
   animation-name: say-hi-animation;  /* Refers to the name of your @keyframes element below */

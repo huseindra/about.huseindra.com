@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             <div className='max-w-xl'>
               <span className='text-sm'>Hi, I am Husein!</span><span className='say-hi'>👋🏽</span>
               <h1 className='text-xl sm:text-3xl font-bold'>A Software Engineer - Web</h1>
-              <p className='text-sm text-justify md:text-left'>Welcome to my documentation space where I share what I`m learning and deliver products including but not limited to web technology, cloud technology and project management.</p>
+              <p className='text-sm text-justify md:text-left'>Welcome to my documentation space where I share what I`m learning and deliver products including but not limited to web technology, cloud technology and product management.</p>
               <div className='flex my-4'>
                 <Link href="/about">
                   <a className='p-1 border bg-gray-200 text-black rounded-3xl text-center justify-center w-24	items-center text-xs cursor-pointer'>Readmore</a>
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
               <Image src={'/hik.jpeg'} width="90" height="90" alt="Husein Ik" className='border border border-gray-200 rounded-full	' priority/>
           </div>
         </div>
-        <div className='flex flex-col md:flex-row w-full justify-between mx-auto max-w-2xl my-12'>
+        <div className='flex flex-col md:flex-row w-full justify-between mx-auto max-w-2xl mb-32 sm:my-12'>
           <div className='flex items-center my-4'>
               <NowPlaying />
            </div>
